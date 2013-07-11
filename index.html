@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;
+	charset=utf-8">
+	<meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes;" />
+	
+	
+	<link rel="stylesheet" href="jquery.mobile-1.0b3.css" />
+	<script type="text/javascript" charset="utf-8" src="jquery-1.6.4.js"></script>
+	<script type="text/javascript" charset="utf-8" src="jquery.mobile-1.0b3.js"></script>
+	
+	
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+	
+
+	
+	<script type="text/javascript" charset="utf-8">
+		function onBodyLoad() {
+			document.addEventListener("deviceready", onDeviceReady,false);
+			}
+			
+		function onDeviceReady() {
+			var element = document.getElementById('appInfo');
+			element.innerHTML = 'PhoneGap (version ' +
+			device.phonegap + ')<br />' + device.platform + ' ' +
+			device.name + ' (version ' + device.version + ').';
+		}
+	</script>
+	
+	
+</head>
+<body onload="onBodyLoad()">
+
+	<div data-role="page">
+		<div data-role="header" data-position="fixed">
+			<h1>HelloWorld con jquerymobile</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Aplicacion de phonegap que utiliza la libreria de jquerymobile.</p>
+			<p id="appInfo">Iniciando.....</p>
+		</div>
+		
+        <div data-role="collapsible">
+			<h3>Header swatch A</h3>
+			<p>I'm the collapsible content with a themed content block set to "a".</p>
+		</div>
+
+		
+		<div data-role="footer" data-position="fixed">
+			<h1>PhoneGap UTM</h1>
+		</div>
+		
+	<div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+			<div data-role="collapsible">
+				<h3>Section 1</h3>
+				<p>I'm the collapsible content for section 1</p>
+			</div>
+		<div data-role="collapsible">
+			<h3>Section 2</h3>
+			<p>I'm the collapsible content for section 2</p>
+		</div>
+		<div data-role="collapsible">
+			<h3>Section 3</h3>
+			<p>I'm the collapsible content for section 3</p>
+		</div>
+	</div>
+	<!-- esta es un  buscador con palabras almacenadas el cual colocas por
+ejemplo y automaticamente te sale palabras que estan en li	-->
+	<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search cars...">
+    <li><a href="#">Acura</a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Chrysler</a></li>
+    <li><a href="#">Dodge</a></li>
+    <li><a href="#">Ferrari</a></li>
+    <li><a href="#">Ford</a></li>
+    <li><a href="#">GMC</a></li>
+    <li><a href="#">Honda</a></li>
+    <li><a href="#">Hyundai</a></li>
+    <li><a href="#">Infiniti</a></li>
+    <li><a href="#">Jeep</a></li>
+    <li><a href="#">Kia</a></li>
+    <li><a href="#">Lexus</a></li>
+    <li><a href="#">Mini</a></li>
+    <li><a href="#">Nissan</a></li>
+    <li><a href="#">Porsche</a></li>
+    <li><a href="#">Subaru</a></li>
+    <li><a href="#">Toyota</a></li>
+    <li><a href="#">Volkswagen</a></li>
+    <li><a href="#">Volvo</a></li>
+</ul>
+		
+	</div>
+	
+	
+	
+	
+	
+</body>
+</html>
